@@ -8,11 +8,26 @@
 
 # 数据库模型
 ebooks
-id : 使用站点+书 形成主键
+id : 
 书名 : book_name
 作者 : author
 书封面 : book_image
 最后更新时间 : last_since
-最新更新时间 : new_since
+最新更新 : new_chapter
 简介 : about_book
-存储地址 : address
+书链接 : book_url
+章节，与chapters关联 : chapter
+
+
+
+chapters:
+id 
+chapter_name:章节名
+chapter_url: 章节url
+content: 内容
+book_id : ebook外键
+
+contents:
+id 
+content: 内容
+chapter_id : 外键
